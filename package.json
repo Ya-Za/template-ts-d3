@@ -1,21 +1,25 @@
 {
-  "name": "template-ts-d3",
-  "version": "1.0.0",
-  "description": "",
-  "scripts": {
-    "build": "webpack",
-    "start": "webpack-dev-server --open"
-  },
-  "keywords": [],
-  "author": "Yasin Zamani <yasin.zamani@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/d3": "^5.0.0",
-    "ts-loader": "^3.4.0",
-    "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.9.7"
-  },
-  "dependencies": {
-    "d3": "^4.13.0"
-  }
+    "name": "template-ts-d3",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "build": "webpack",
+        "start": "webpack-dev-server --open",
+        "test": "mocha ./**/*.spec.ts --require ts-node/register"
+    },
+    "keywords": [],
+    "author": "Yasin Zamani <yasin.zamani@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/d3": "*",
+        "@types/mocha": "*",
+        "@types/node": "*",
+        "mocha": "*",
+        "ts-loader": "*",
+        "ts-node": "*",
+        "webpack-cli": "*",
+        "webpack-dev-server": "*",
+        "typescript": "*",
+        "webpack": "*"
+    }
 }
