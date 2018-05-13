@@ -1,8 +1,12 @@
 const path = require('path');
 
 module.exports = {
+    mode: 'production',
     entry: './src/index.ts',
-    devtool: 'inline-source-map',
+    externals: {
+        d3: 'd3'
+    },
+    devtool: 'source-map',
     module: {
         rules: [
             {
